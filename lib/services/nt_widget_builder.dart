@@ -1,3 +1,4 @@
+import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/register.dart';
 import 'package:flutter/material.dart';
 
 import 'package:dot_cast/dot_cast.dart';
@@ -160,6 +161,12 @@ class NTWidgetBuilder {
       defaultHeight: 2,
       defaultWidth: 2,
     );
+
+    register(
+        name: ReminderWidget.widgetType,
+        model: ReminderModel.new,
+        widget: ReminderWidget.new,
+        fromJson: ReminderModel.fromJson);
 
     register(
         name: PidFfConfigWidget.widgetType,
