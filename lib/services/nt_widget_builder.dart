@@ -1,4 +1,3 @@
-import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/register.dart';
 import 'package:flutter/material.dart';
 
 import 'package:dot_cast/dot_cast.dart';
@@ -17,6 +16,7 @@ import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/command_widget.
 import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/differential_drive.dart';
 import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/encoder_widget.dart';
 import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/field_widget.dart';
+import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/puth_ui.dart';
 import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/fms_info.dart';
 import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/gyro.dart';
 import 'package:elastic_dashboard/widgets/nt_widgets/multi-topic/motion_magic_config.dart';
@@ -163,10 +163,10 @@ class NTWidgetBuilder {
     );
 
     register(
-        name: ReminderWidget.widgetType,
-        model: ReminderModel.new,
-        widget: ReminderWidget.new,
-        fromJson: ReminderModel.fromJson);
+        name: Puth_UIWidget.widgetType,
+        model: Puth_UIModel.new,
+        widget: Puth_UIWidget.new,
+        fromJson: Puth_UIModel.fromJson);
 
     register(
         name: PidFfConfigWidget.widgetType,
