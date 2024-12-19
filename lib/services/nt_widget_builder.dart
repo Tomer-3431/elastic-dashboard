@@ -167,10 +167,10 @@ class NTWidgetBuilder {
       model: Puth_UIModel.new,
       widget: Puth_UIWidget.new,
       fromJson: Puth_UIModel.fromJson,
-      minHeight: _normalSize * 2,
-      minWidth: _normalSize * 3,
-      defaultHeight: 2,
-      defaultWidth: 3,
+      minHeight: _normalSize * 3,
+      minWidth: _normalSize * 7,
+      defaultHeight: 3,
+      defaultWidth: 7,
     );
 
     register(

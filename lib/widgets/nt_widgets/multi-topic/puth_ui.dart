@@ -36,11 +36,12 @@ class Puth_UIWidget extends NTWidget {
   static const String widgetType = 'puth_ui';
 
   const Puth_UIWidget({super.key}) : super();
-
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(children: [
+          Column(
       children: [
+
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -92,6 +93,19 @@ class Puth_UIWidget extends NTWidget {
           ),
         ),
       ],
-    );
+    ),
+    Text(Point(0,4,56).getPointString(), style: const TextStyle(fontSize: 24)),
+    ],);
+  }
+}
+
+class Point{
+  late double x; // in miters
+  late double y; // in meters
+  late double angle; // in degrew
+
+  Point(this.x, this.y, this.angle);
+  String getPointString(){
+    return ("x:${x} y:${y}a:$angle");
   }
 }
