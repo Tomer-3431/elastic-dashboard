@@ -163,10 +163,15 @@ class NTWidgetBuilder {
     );
 
     register(
-        name: Puth_UIWidget.widgetType,
-        model: Puth_UIModel.new,
-        widget: Puth_UIWidget.new,
-        fromJson: Puth_UIModel.fromJson);
+      name: Puth_UIWidget.widgetType,
+      model: Puth_UIModel.new,
+      widget: Puth_UIWidget.new,
+      fromJson: Puth_UIModel.fromJson,
+      minHeight: _normalSize * 2,
+      minWidth: _normalSize * 3,
+      defaultHeight: 2,
+      defaultWidth: 3,
+    );
 
     register(
         name: PidFfConfigWidget.widgetType,
